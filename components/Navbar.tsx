@@ -33,6 +33,11 @@ const Navbar = () => {
                 ))}
             </ul>
 
+            {/* <div className="hidden flex-col lg:flex">
+                <button className="regular-16 text-grayh-50 transition-all hover:font-bold">PT</button>
+                <button className="regular-16 text-grayh-50 transition-all hover:font-bold">EN</button>
+            </div> */}
+
             <div className="lg:flexCenter hidden">
                 <Button
                     type="button"
@@ -56,7 +61,7 @@ const Navbar = () => {
             {/* Menu lateral */}
             {menuOpen && (
                 <div className="fixed top-0 right-0 h-full w-64 bg-slate-100 z-50 p-5 flex items-center justify-between flex-col">
-                    <div onClick={toggleMenu}>
+                    <div onClick={toggleMenu} className="flex content-end w-full">
                         <Image src="close-black.svg" alt="close" width={32} height={32} />
                     </div>
                     <ul className="">
