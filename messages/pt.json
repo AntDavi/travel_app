@@ -1,0 +1,40 @@
+{
+    "Hero": {
+        "title": "Área de Camping Doce Oeste",
+        "subtitle": "Queremos estar em cada uma de suas viagens buscando a satisfação de ver a beleza incorruptível da natureza. Podemos ajudá-lo em uma aventura ao redor do mundo em apenas um app",
+        "reviews": "Reviews Exelentes",
+        "buttonWork": "Como trabalhamos?",
+        "cardLocalization": "Localização",
+        "cardDistance": "Distância",
+        "cardElevation": "Elevação"
+    },
+    "Camp": {
+        "cardSiteTitle": "",
+        "cardSiteDescription": "",
+        "cardSitePeopleJoined": "inscreveram-se",
+        "cardCampTitleStrong": "Se sente perdido",
+        "cardCampTitleRegular": "e não sabe o caminho?",
+        "cardCampDescription": "A partir da ansiedade dos escaladores ao visitar um novo local de escalada, a possibilidade de se perderem é muito grande. É por isso que estamos aqui para aqueles que querem começar uma aventura"
+    },
+    "Guide": {
+        "textUp": "Estamos aqui por você",
+        "guideTitle": "Te guiando pelo caminho tranquilo",
+        "guideDescription": "Somente com o aplicativo hilink você não vai mais se perder e se perder novamente, pois já oferecemos suporte a mapas offline quando não há conexão com internet no campo. Convide seus amigos, parentes e amigos para se divertir no deserto pelo vale e chegar ao topo da montanha.",
+        "guideCardDestiny": "Destino",
+        "guideCardStartTrail": "Iniciar trilha"
+    },
+    "Features": {
+        "featuresTitle": "Nossas Features",
+        "featuresMapsTitle": "Mapas reais podem ser usados offline",
+        "featuresMapsDescription": "Oferecemos uma solução para que você possa usar nosso aplicativo ao escalar, sim, mapas offline que você pode usar a qualquer momento quando não houver sinal no local",
+        "featuresTimelineTime": "Defina um cronograma de aventuras",
+        "featuresTimelineDescription": "Agende uma aventura com amigos. Nas férias, há muitas ofertas interessantes da Hilink. Dessa forma, não há mais discussões",
+        "featuresTechnologyTitle": "Tecnologia usando realidade aumentada",
+        "featuresTechnologyDescription": "A tecnologia utiliza realidade aumentada como guia para sua trilha de caminhada na floresta até o topo da montanha. Já é suportado pela tecnologia mais recente sem necessidade de conexão com a internet",
+        "featuresLocationTitle": "Muitos novos locais todo mês",
+        "featuresLocationDescription": "Muitos novos locais todo mês, porque temos uma comunidade mundial de alpinistas que compartilham suas melhores experiências com escaladas"
+    },
+    "GetApp": {
+        "getAppTitle": "Baixe nosso App Agora!"
+    }
+}

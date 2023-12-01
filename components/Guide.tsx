@@ -1,6 +1,10 @@
 import Image from "next/image"
+import { useTranslations } from 'next-intl'
 
 const Guide = () => {
+
+  const t = useTranslations('Guide')
+
   return (
     <section className="flexCenter flex-col">
       <div className="padding-container max-container w-full pb-24">
@@ -12,19 +16,19 @@ const Guide = () => {
         />
 
         <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">
-          Estamos aqui por você
+          {t('textUp')}
         </p>
 
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[600px]">
-            Te guiando pelo caminho tranquilo
+            {t('guideTitle')}
           </h2>
           <p className="regular-16 text-gray-30 xl:max-w-[520px]">
-            Somente com o aplicativo hilink você não vai mais se perder e se perder novamente, pois já oferecemos suporte a mapas offline quando não há conexão com internet no campo. Convide seus amigos, parentes e amigos para se divertir no deserto pelo vale e chegar ao topo da montanha
+            {t('guideDescription')}
           </p>
         </div>
       </div>
-      
+
       <div className="flexCenter max-container relative w-full">
         <Image
           src="/boat.png"
@@ -47,7 +51,7 @@ const Guide = () => {
 
             <div className="flex w-full flex-col">
               <div className="flexBetween w-full">
-                <p className="regular-16 text-gray-20">Destino</p>
+                <p className="regular-16 text-gray-20">{t('guideCardDestiny')}</p>
                 <p className="bold-16 text-green-50">48 min</p>
               </div>
               <p className="bold-20 mt-2">Águas Quentes</p>
@@ -55,7 +59,7 @@ const Guide = () => {
 
             <div className="flex w-full flex-col">
               <div className="flexBetween w-full">
-                <p className="regular-16 text-gray-20">Iniciar trilha</p>
+                <p className="regular-16 text-gray-20">{t('guideCardStartTrail')}</p>
               </div>
               <h4 className="bold-20 mt-2 whitespace-nowrap">Santa Quiteria</h4>
             </div>

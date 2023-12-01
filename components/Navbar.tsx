@@ -3,9 +3,11 @@
 import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
+import { Link as LinkNavigation, usePathname, useRouter } from "@/navigation"
 import Button from "./Button"
 
 import React, { useState } from "react";
+
 
 const Navbar = () => {
 
@@ -13,8 +15,9 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
-        console.log('Clicou')
     }
+
+    const pathname = usePathname();
 
     return (
         <nav className="flexBetween max-container padding-container relative z-300 py-5">
@@ -33,10 +36,14 @@ const Navbar = () => {
                 ))}
             </ul>
 
-            {/* <div className="hidden flex-col lg:flex">
-                <button className="regular-16 text-grayh-50 transition-all hover:font-bold">PT</button>
-                <button className="regular-16 text-grayh-50 transition-all hover:font-bold">EN</button>
-            </div> */}
+            <div className="hidden flex-col lg:flex">
+                <LinkNavigation className="regular-16 text-grayh-50 transition-all hover:font-bold" href={pathname} locale="pt">
+                    PT
+                </LinkNavigation>
+                <LinkNavigation className="regular-16 text-grayh-50 transition-all hover:font-bold" href={pathname} locale="en">
+                    EN
+                </LinkNavigation>
+            </div>
 
             <div className="lg:flexCenter hidden">
                 <Button

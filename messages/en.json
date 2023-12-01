@@ -1,0 +1,40 @@
+{
+    "Hero": {
+        "title": "Doce Oeste Camping Area",
+        "subtitle": "We want to be on each of your trips seeking the satisfaction of seeing the incorruptible beauty of nature. We can help you on an adventure around the world in just one app",
+        "reviews": "Excellent Reviews",
+        "buttonWork": "How do we work?",
+        "cardLocalization": "Localization",
+        "cardDistance": "Distance",
+        "cardElevation": "Elevation"
+    },
+    "Camp": {
+        "cardSiteTitle": "",
+        "cardSiteDescription": "",
+        "cardSitePeopleJoined": "signed up",
+        "cardCampTitleStrong": "Feeling Lost",
+        "cardCampTitleRegular": "And Not Knowing The Way?",
+        "cardCampDescription" : "Starting from the anxiety of the climbers when visiting a new climbing location, the possibility of getting lost is very large. That's why we are here for those of you who want to start an adventure"
+    },
+    "Guide": {
+        "textUp": "WE ARE HERE FOR YOU",
+        "guideTitle": "Guide You to Easy Path",
+        "guideDescription": "Only with the hilink application you will no longer get lost and get lost again, because we already support offline maps when there is no internet connection in the field. Invite your friends, relatives and friends to have fun in the wilderness through the valley and reach the top of the mountain.",
+        "guideCardDestiny": "Destination",
+        "guideCardStartTrail": "Start track"
+    },
+    "Features": {
+        "featuresTitle": "Our Features",
+        "featuresMapsTitle": "Real Maps Can Be Offline",
+        "featuresMapsDescription": "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location",
+        "featuresTimelineTime": "Set An Adventure Schedule",
+        "featuresTimelineDescription": "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+        "featuresTechnologyTitle": "Technology Using Augment Reality",
+        "featuresTechnologyDescription": "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection",
+        "featuresLocationTitle": "Many New Locations Every Month",
+        "featuresLocationDescription": "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing"
+    },
+    "GetApp": {
+        "getAppTitle": "Download our App Now!"
+    }
+}

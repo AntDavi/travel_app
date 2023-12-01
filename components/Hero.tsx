@@ -1,8 +1,11 @@
-'use client'
-
 import Image from 'next/image'
 import Button from './Button'
+import { useTranslations } from 'next-intl'
+
 const Hero = () => {
+
+  const t = useTranslations('Hero')
+
   return (
     <section className='max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row'>
       <div className='hero-map' />
@@ -18,10 +21,10 @@ const Hero = () => {
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
         <h1 className='bold-52 lg:bold-88'>
-          Área de Camping Doce Oeste
+          {t('title')}
         </h1>
         <p className='regular-16 mt-6 text-gray-30 xl:max-w-[520px]'>
-          Queremos estar em cada uma de suas viagens buscando a satisfação de ver a beleza incorruptível da natureza. Podemos ajudá-lo em uma aventura ao redor do mundo em apenas um app
+        {t('subtitle')}
         </p>
 
         <div className='my-11 flex flex-wrap gap-5'>
@@ -38,7 +41,7 @@ const Hero = () => {
 
           <p className='bold-16 lg:bold-20 text-blue-70'>
             198k
-            <span className='regular-16 lg:regular-20 ml-1'>Reviews Exelentes</span>
+            <span className='regular-16 lg:regular-20 ml-1'>{t('reviews')}</span>
           </p>
         </div>
 
@@ -50,7 +53,7 @@ const Hero = () => {
           />
           <Button
             type='button'
-            title='Como trabalhamos?'
+            title={t('buttonWork')}
             icon='play.svg'
             variant='btn_white_text'
           />
@@ -62,7 +65,7 @@ const Hero = () => {
 
           <div className='flex flex-col'>
             <div className='flexBetween'>
-              <p className='regular-16 text-gray-20'>Localização</p>
+              <p className='regular-16 text-gray-20'>{t('cardLocalization')}</p>
               <Image
                 src="/close.svg"
                 alt='close'
@@ -75,11 +78,11 @@ const Hero = () => {
 
           <div className='flexBetween'>
             <div className="flex flex-col">
-              <p className='regular-16 block text-gray-20'>Distância</p>
+              <p className='regular-16 block text-gray-20'>{t('cardDistance')}</p>
               <p className='bold-20 text-white'>45 km</p>
             </div>
             <div className='flex flex-col'>
-              <p className='regular-16 block text-gray-20'>Elevação</p>
+              <p className='regular-16 block text-gray-20'>{t('cardElevation')}</p>
               <p className='bold-20 text-white'>578 m</p>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 
 // NAVIGATION
 // Configuração dos links de navegação
@@ -22,32 +23,32 @@ export const PEOPLE_URL = [
 // Recursos oferecidos na seção de recursos
 export const FEATURES = [
     {
-        title: 'Mapas reais podem ser usados offline',
+        title: 'featuresMapsTitle',
         icon: '/map.svg',
         variant: 'green',
         description:
-            'Oferecemos uma solução para que você possa usar nosso aplicativo ao escalar, sim, mapas offline que você pode usar a qualquer momento quando não houver sinal no local',
+            'featuresMapsDescription',
     },
     {
-        title: 'Defina um cronograma de aventuras',
+        title: 'featuresTimelineTime',
         icon: '/calendar.svg',
         variant: 'green',
         description:
-            'Agende uma aventura com amigos. Nas férias, há muitas ofertas interessantes da Hilink. Dessa forma, não há mais discussões',
+            'featuresTimelineDescription',
     },
     {
-        title: 'Tecnologia usando realidade aumentada',
+        title: 'featuresTechnologyTitle',
         icon: '/tech.svg',
         variant: 'green',
         description:
-            'A tecnologia utiliza realidade aumentada como guia para sua trilha de caminhada na floresta até o topo da montanha. Já é suportado pela tecnologia mais recente sem necessidade de conexão com a internet',
+            'featuresTechnologyDescription',
     },
     {
-        title: 'Muitos novos locais todo mês',
+        title: 'featuresLocationTitle',
         icon: '/location.svg',
         variant: 'orange',
         description:
-            'Muitos novos locais todo mês, porque temos uma comunidade mundial de alpinistas que compartilham suas melhores experiências com escaladas',
+            'featuresLocationDescription',
     },
 ];
 

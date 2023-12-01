@@ -1,6 +1,7 @@
 // Importação de constantes e componentes necessários
 import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
+import { useTranslations } from 'next-intl'
 
 // Interface para as propriedades do componente CampSite
 interface CampProps {
@@ -12,6 +13,9 @@ interface CampProps {
 
 // Componente CampSite que representa um local de camping individual
 const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps) => {
+
+  const t = useTranslations('Camp')
+
   return (
     <div className={`w-full h-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
       <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
@@ -53,6 +57,8 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
 
 // Componente Camp que representa a seção de campings
 const Camp = () => {
+  const t = useTranslations('Camp')
+
   return (
     <section className="2xl:max-container relative flex flex-col py-10 lg:mg-10 lg:py-20 xl:mb-20">
       {/* Lista de locais de camping */}
@@ -61,13 +67,13 @@ const Camp = () => {
           backgroundImage="bg-bg-img-1"
           title="Camping Doce Oeste"
           subtitle="Itatiba, São Paulo"
-          peopleJoined="50+ inscreveram-se"
+          peopleJoined={`50+ ${t('cardSitePeopleJoined')}`}
         />
         <CampSite
           backgroundImage="bg-bg-img-2"
           title="Camping Rio Amaranto"
           subtitle="Bento Gonçalves, Rio Grande do Sul"
-          peopleJoined="30+ inscreveram-se"
+          peopleJoined={`30+ ${t('cardSitePeopleJoined')}`}
         />
       </div>
 
@@ -76,11 +82,11 @@ const Camp = () => {
         <div className="bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
           {/* Título e descrição */}
           <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
-            <strong>Se sente perdido </strong> 
-            e não sabe o caminho?
+            <strong>{t('cardCampTitleStrong')} </strong>
+            {t('cardCampTitleRegular')}
           </h2>
           <p className="regular-14 xl:regular-16 mt-5 text-white">
-            A partir da ansiedade dos escaladores ao visitar um novo local de escalada, a possibilidade de se perderem é muito grande. É por isso que estamos aqui para aqueles que querem começar uma aventura
+            {t('cardCampDescription')}
           </p>
           {/* Citação de destaque */}
           <Image
