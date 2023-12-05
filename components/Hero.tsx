@@ -1,3 +1,5 @@
+// 'use client'
+
 import Image from 'next/image'
 import Button from './Button'
 import { useTranslations } from 'next-intl'
@@ -13,7 +15,7 @@ const Hero = () => {
       {/* Esquerda */}
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
-      <Image 
+        <Image
           src="/camp.svg"
           alt="camp"
           width={50}
@@ -24,17 +26,18 @@ const Hero = () => {
           {t('title')}
         </h1>
         <p className='regular-16 mt-6 text-gray-30 xl:max-w-[520px]'>
-        {t('subtitle')}
+          {t('subtitle')}
         </p>
 
         <div className='my-11 flex flex-wrap gap-5'>
           <div className="flex items-center gap-2">
-            {Array(5).fill(1).map(() => (
+            {Array(5).fill(1).map((_, index) => (
               <Image
                 src='/star.svg'
                 alt='start'
                 width={24}
                 height={24}
+                key={index}
               />
             ))}
           </div>

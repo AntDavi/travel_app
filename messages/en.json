@@ -1,4 +1,11 @@
 {
+    "Navbar": {
+        "home": "Home",
+        "howToDo": "How does Hilink work?",
+        "services": "Services",
+        "price": "Prices",
+        "contact": "Contact us"
+    },
     "Hero": {
         "title": "Doce Oeste Camping Area",
         "subtitle": "We want to be on each of your trips seeking the satisfaction of seeing the incorruptible beauty of nature. We can help you on an adventure around the world in just one app",
@@ -36,5 +43,17 @@
     },
     "GetApp": {
         "getAppTitle": "Download our App Now!"
+    },
+    "Footer": {
+        "footerLinkKnowMore": "Know More",
+        "footerLinkComunity": "Our Community",
+        "footerLinkContact": "Contact Us",
+        "footerLinkSocial": "Social",
+        "aboutHilink": "About Hilink",
+        "releases": "Press Releases",
+        "environment": "Environment",
+        "cacancies": "Vacancies",
+        "policies": "Privacy Policy",
+        "contact": "Contact Us"
     }
 }

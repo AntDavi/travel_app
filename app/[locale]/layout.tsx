@@ -2,12 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import {notFound} from 'next/navigation';
+import { notFound } from 'next/navigation';
+import { NextIntlClientProvider, useMessages } from 'next-intl'
 
-export const metadata: Metadata = {
-  title: 'Travel',
-  description: 'Travel UI/UX App for camping',
-}
+// export const metadata: Metadata = {
+//   title: 'Travel',
+//   description: 'Travel UI/UX App for camping',
+// }
 
 const locales = ['en', 'pt']
 
@@ -23,14 +24,14 @@ export default function RootLayout({
     notFound();
   }
 
+  const messages = useMessages();
+
   return (
     <html lang={locale}>
       <body>
-        <Navbar/>
-        <main className='relative overflow-hidden'>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
-        </main>
-        <Footer/>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

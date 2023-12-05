@@ -1,6 +1,7 @@
 import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
 
 type FooterColumnProps = {
     title: string;
@@ -8,15 +9,23 @@ type FooterColumnProps = {
 }
 
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
+
+    const t = useTranslations('Footer')
+
+    console.log('{t(children)}', t(children))
+    
     return (
         <div className="flex flex-col gap-5">
-            <h4 className="bold-18 whitespace-nowrap">{title}</h4>
+            <h4 className="bold-18 whitespace-nowrap">{t(title)}</h4>
             {children}
         </div>
     )
 }
 
 const Footer = () => {
+
+    const t = useTranslations('Footer')
+
     return (
         <footer className="flexCenter mb-24">
             <div className="padding-container max-container flex w-full flex-col gap-14">
@@ -42,7 +51,7 @@ const Footer = () => {
                                             href='/'
                                             key={link}
                                         >
-                                            {link}
+                                            {t(link)}
                                         </Link>
                                     ))}
                                 </ul>

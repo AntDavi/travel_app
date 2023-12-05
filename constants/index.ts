@@ -1,13 +1,11 @@
-import { useTranslations } from 'next-intl'
-
 // NAVIGATION
 // Configuração dos links de navegação
 export const NAV_LINKS = [
-    { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'how_hilink_work', label: 'Como a Hilink Funciona?' },
-    { href: '/', key: 'services', label: 'Serviços' },
-    { href: '/', key: 'pricing ', label: 'Preços' },
-    { href: '/', key: 'contact_us', label: 'Contate-nos' },
+    { href: '/', key: 'home', label: 'home' },
+    { href: '/', key: 'how_hilink_work', label: 'howToDo' },
+    { href: '/', key: 'services', label: 'services' },
+    { href: '/', key: 'pricing ', label: 'price' },
+    { href: '/', key: 'contact_us', label: 'contact' },
 ];
 
 // CAMP SECTION
@@ -56,34 +54,34 @@ export const FEATURES = [
 // Links e informações do rodapé
 export const FOOTER_LINKS = [
     {
-        title: 'Saiba Mais',
+        title: 'footerLinkKnowMore',
         links: [
-            'Sobre a Hilink',
-            'Comunicados de Imprensa',
-            'Meio Ambiente',
-            'Vagas',
-            'Política de Privacidade',
-            'Contate-nos',
+            'aboutHilink',
+            'releases',
+            'environment',
+            'vacancies',
+            'policies',
+            'contact',
         ],
     },
     {
-        title: 'Nossa Comunidade',
+        title: 'footerLinkComunity',
         links: ['Escalada xixixi', 'Hiking hilink', 'Hilink kinthill'],
     },
 ];
 
 // Informações de contato no rodapé
 export const FOOTER_CONTACT_INFO = {
-    title: 'Contate-nos',
+    title: 'footerLinkContact',
     links: [
-        { label: 'Oficial Administrativo', value: '123-456-7890' },
-        { label: 'Email Oficial', value: 'hilink@akinthil.com' },
+        { label: 'Phone', value: '123-456-7890' },
+        { label: 'Email', value: 'hilink@akinthil.com' },
     ],
 };
 
 // Redes Sociais
 export const SOCIALS = {
-    title: 'Social',
+    title: 'footerLinkSocial',
     links: [
         '/facebook.svg',
         '/instagram.svg',

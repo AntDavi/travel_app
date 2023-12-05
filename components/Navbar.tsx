@@ -8,8 +8,12 @@ import Button from "./Button"
 
 import React, { useState } from "react";
 
+import { useTranslations } from 'next-intl'
+
 
 const Navbar = () => {
+
+    const t = useTranslations('Navbar')
 
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -31,7 +35,8 @@ const Navbar = () => {
                     // Cada item da lista é um link de navegação
                     <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
                         {/* O conteúdo do link é o rótulo do link */}
-                        {link.label}
+                        {t(link.label)}
+                        {/* (link.label) */}
                     </Link>
                 ))}
             </ul>
