@@ -79,10 +79,18 @@ const Navbar = () => {
                     <ul className="">
                         {NAV_LINKS.map((link) => (
                             <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold mb-5">
-                                {link.label}
+                                {t(link.label)}
                             </Link>
                         ))}
                     </ul>
+                    <div className="flex-row flex">
+                        <LinkNavigation className="regular-16 text-grayh-50 transition-all hover:font-bold" href={pathname} locale="pt">
+                            PT
+                        </LinkNavigation>
+                        <LinkNavigation className="regular-16 text-grayh-50 transition-all hover:font-bold ml-2" href={pathname} locale="en">
+                            EN
+                        </LinkNavigation>
+                    </div>
                     <Button
                         type="button"
                         title="Login"
